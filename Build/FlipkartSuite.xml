@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FlipkartTestSuite" verbose="10" parallel="false" thread-count="1">
+	
+	
+	<parameter name="selenium.host" value="http://192.168.43.17" /> 
+	<parameter name="selenium.port" value="4444" /> 
+	
+	
+<listeners>
+	<listener class-name="com.flipkart.Utility.CustomReporter"/>
+	<listener class-name="com.flipkart.Utility.CustomReporterBuildSummary"/>
+	<listener class-name="com.flipkart.Utility.CustomReporterListener"/>
+	<listener class-name="com.flipkart.Utility.CustomReporterTestFailureDetails"/>
+</listeners>
+	<test name="To verify Flipkart scenario add to cart.">
+		<classes>
+			<class name="com.flipkart.Scenario1.IndexSc1">
+				<methods>
+					<include name="searchMobileFilter">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+ 		<test name="Failed Scenario.">
+		<classes>
+			<class name="com.flipkart.Scenario1.IndexSc1">
+				<methods>
+					<include name="failed">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

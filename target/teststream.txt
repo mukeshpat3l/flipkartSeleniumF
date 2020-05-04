@@ -1,0 +1,1 @@
+{"metodo":"failed", "status":"2", "classe":"org.testng.TestRunner", "descricao":"Failed Scenario."}

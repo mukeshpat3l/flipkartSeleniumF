@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [FlipkartTestSuite]">
+  <listeners>
+    <listener class-name="com.flipkart.Utility.CustomReporter"/>
+    <listener class-name="com.flipkart.Utility.CustomReporterBuildSummary"/>
+    <listener class-name="com.flipkart.Utility.CustomReporterListener"/>
+    <listener class-name="com.flipkart.Utility.CustomReporterTestFailureDetails"/>
+  </listeners>
+  <test verbose="0" name="Failed Scenario.(failed)">
+    <classes>
+      <class name="com.flipkart.Scenario1.IndexSc1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="failed"/>
+        </methods>
+      </class> <!-- com.flipkart.Scenario1.IndexSc1 -->
+    </classes>
+  </test> <!-- Failed Scenario.(failed) -->
+</suite> <!-- Failed suite [FlipkartTestSuite] -->
