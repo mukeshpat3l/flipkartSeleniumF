@@ -1365,7 +1365,7 @@ public class Common {
 			HtmlEmail email = new HtmlEmail();
 			email.setHostName("smtp.gmail.com");
 			email.setSmtpPort(465);
-			email.setAuthenticator(new DefaultAuthenticator("mukesh.patel@kiwiqa.com", "7600@dmin1!"));
+			email.setAuthenticator(new DefaultAuthenticator("mukesh.patel@kiwiqa.com", "Gmail@7600"));
 			email.setSSLOnConnect(true);
 			email.setFrom("mukesh.patel@kiwiqa.com");
 			email.setSubject("Selenium Test Report");

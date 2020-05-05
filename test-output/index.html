@@ -175,6 +175,8 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;FlipkartTestSuite&quot;&gt;
+  &lt;parameter name=&quot;selenium.port&quot; value=&quot;4444&quot;/&gt;
+  &lt;parameter name=&quot;selenium.host&quot; value=&quot;http://192.168.43.17&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.flipkart.Utility.CustomReporter&quot;/&gt;
     &lt;listener class-name=&quot;com.flipkart.Utility.CustomReporterBuildSummary&quot;/&gt;
@@ -243,11 +245,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchMobileFilter')
 data.setCell(0, 2, 'com.flipkart.Scenario1.IndexSc1')
-data.setCell(0, 3, 65643);
+data.setCell(0, 3, 72715);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'failed')
 data.setCell(1, 2, 'com.flipkart.Scenario1.IndexSc1')
-data.setCell(1, 3, 3003);
+data.setCell(1, 3, 3009);
 window.suiteTableData['FlipkartTestSuite']= { tableData: data, tableDiv: 'times-div-FlipkartTestSuite'}
 return data;
 }
@@ -336,38 +338,38 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.flipkart.Scenario1.IndexSc1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">fetchSuiteConfiguration(org.testng.TestRunner@5629510)</span>
+                <span class="method-name">fetchSuiteConfiguration(org.testng.TestRunner@7a1a3478)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(void com.flipkart.Scenario1.IndexSc1.searchMobileFilter(), org.testng.TestRunner@5629510, [TestResul...)</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-name">setUp(void com.flipkart.Scenario1.IndexSc1.searchMobileFilter(), org.testng.TestRunner@7a1a3478, [TestResu...)</span>
+                <span class="method-start">68 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchMobileFilter</span>
-                <span class="method-start">16360 ms</span>
+                <span class="method-start">17686 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=searchMobileFilter status=SUCCESS method=IndexSc1.searchMobileFilter()[pri:0, insta...)</span>
-                <span class="method-start">82003 ms</span>
+                <span class="method-start">90402 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test before">
-                <span class="method-name">fetchSuiteConfiguration(org.testng.TestRunner@4df5bcb4)</span>
-                <span class="method-start">84838 ms</span>
+                <span class="method-name">fetchSuiteConfiguration(org.testng.TestRunner@495b0487)</span>
+                <span class="method-start">93156 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(void com.flipkart.Scenario1.IndexSc1.failed(), org.testng.TestRunner@4df5bcb4, [TestResult name=fail...)</span>
-                <span class="method-start">84854 ms</span>
+                <span class="method-name">setUp(void com.flipkart.Scenario1.IndexSc1.failed(), org.testng.TestRunner@495b0487, [TestResult name=fail...)</span>
+                <span class="method-start">93157 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">failed</span>
-                <span class="method-start">101626 ms</span>
+                <span class="method-start">116558 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=failed status=FAILURE method=IndexSc1.failed()[pri:0, instance:com.flipkart.Scenari...)</span>
-                <span class="method-start">104641 ms</span>
+                <span class="method-start">119580 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
