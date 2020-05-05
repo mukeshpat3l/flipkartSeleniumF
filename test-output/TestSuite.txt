@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 131.151 s <<< FAILURE! - in TestSuite
-failed(com.flipkart.Scenario1.IndexSc1)  Time elapsed: 3.024 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at com.flipkart.Scenario1.IndexSc1.failed(IndexSc1.java:177)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 93.256 s - in TestSuite

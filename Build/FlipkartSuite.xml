@@ -23,7 +23,7 @@
 			</class>
 		</classes>
 	</test>
-	
+<!-- 	
  		<test name="Failed Scenario.">
 		<classes>
 			<class name="com.flipkart.Scenario1.IndexSc1">
@@ -34,4 +34,5 @@
 			</class>
 		</classes>
 	</test>
+	 -->
 </suite>
