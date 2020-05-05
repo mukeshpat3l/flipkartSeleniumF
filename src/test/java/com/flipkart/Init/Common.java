@@ -1353,6 +1353,7 @@ public class Common {
 		driver.switchTo().window(tabs.get(tabNumber));
 	}
 
+/*	
 	@SuppressWarnings("resource")
 	public static String email() throws FileNotFoundException {
 		
@@ -1360,6 +1361,9 @@ public class Common {
 		return content;
 	}
 	
+*/
+	
+/*	
 	public static void sendFaiulreReport(String s) throws EmailException {
 		try {
 			HtmlEmail email = new HtmlEmail();
@@ -1383,5 +1387,6 @@ public class Common {
 			e.printStackTrace();
 		}
 	}
-
+*/
+	
 }

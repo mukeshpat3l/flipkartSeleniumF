@@ -298,8 +298,8 @@ public class SeleniumInit{
 					System.out.println("1 message from tear down");
 					//  test.log(Status.FAIL,"Please look to the screenshot :- "+ Common.makeScreenshot(driver, screenshotName));
 					//  test.log(Status.FAIL, testResult.getThrowable());
-					Common.email();
-					Common.sendFaiulreReport(screenshotName);
+					//Common.email();
+					//Common.sendFaiulreReport(screenshotName);
 		        }
 				if(testResult.getStatus()==ITestResult.SKIP)
 				{

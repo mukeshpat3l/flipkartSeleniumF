@@ -322,10 +322,10 @@ public class CustomReporter extends CustomReporterListener {
 
 		m_out.println("<tr><td bgcolor='white' colspan='5'> <table border='0' width='100%' bgcolor='#e6f7ff'><tr>"
 				+ "<td  width='25%'  bgcolor='white'>"
-				+ "<center><img width='150px' src=''/></center>"
+				+ "<center><img width='150px' src='https://www.kiwiqa.com/wp-content/uploads/2017/06/KiwiQA_option2.png'/></center>"
 				+ "</td><td ><center><font color='#008bcc'><b><h1>Failed Test Cases Analysis</h1></b></font></center></td> "
 				+ "<td width='25%' bgcolor='white'>"
-				+ "<center><img width='150px' src=''/></center></td> "
+				+ "<center><img width='150px' src='http://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-logo_9fddff.png'/></center></td> "
 				+ "</tr></table> </td></tr>");
 		m_out.println("<tr><td colspan='5'>Overall test suite completion : <b>"
 				+ Time + " minutes</b><br/> Date and Time of Run: <b>"
@@ -565,7 +565,7 @@ public class CustomReporter extends CustomReporterListener {
 
 	/** Finishes HTML stream */
 	protected void endHtml(PrintWriter out) {
-		out.println("<tr bgcolor='SkyBlue'><td align='right' colspan='5'><center><b><i>Report customized by Evosys </i><b><center></center></b></b></center></td></tr>");
+		out.println("<tr bgcolor='SkyBlue'><td align='right' colspan='5'><center><b><i>Report customized by KiwiQA </i><b><center></center></b></b></center></td></tr>");
 		out.println("</body></html>");
 	}
 	/** Arranges methods by classname and method name */
