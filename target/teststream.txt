@@ -1,1 +1,6 @@
 {"metodo":"failed", "status":"2", "classe":"org.testng.TestRunner", "descricao":"Failed Scenario."}
+{"metodo":"searchMobileFilter", "status":"2", "classe":"org.testng.TestRunner", "descricao":"To verify Flipkart scenario add to cart."}
+{"metodo":"failed", "status":"2", "classe":"org.testng.TestRunner", "descricao":"Failed Scenario."}
+{"metodo":"searchMobileFilter", "status":"2", "classe":"org.testng.TestRunner", "descricao":"To verify Flipkart scenario add to cart."}
+{"metodo":"failed", "status":"2", "classe":"org.testng.TestRunner", "descricao":"Failed Scenario."}
+{"metodo":"failed", "status":"2", "classe":"org.testng.TestRunner", "descricao":"Failed Scenario."}

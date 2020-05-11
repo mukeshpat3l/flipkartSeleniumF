@@ -3,10 +3,13 @@ package com.flipkart.Scenario1;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.flipkart.Utility.TestData;
 import com.flipkart.Init.Common;
 import com.flipkart.Init.SeleniumInit;
 
 public class IndexSc1 extends SeleniumInit {
+
+	
 
 	@Test
 	void searchMobileFilter() {
@@ -39,8 +42,11 @@ public class IndexSc1 extends SeleniumInit {
 		logStep(step++, "Close the Login Pop up.");
 		verificationSc1 = indexPageSc1.closePopup();
 
-		String device = "Realme";
-
+		//String device = "Realme";
+		
+		// Getting Category 'Mobile Phone' from Excel sheet.
+		String device = TestData.getMobileDetails(6, 1).trim();
+		log("Fetched Mobile Compnay name from Excel sheet is: "+ device);
 		logStep(step++, "Select Electronics menu > Mobile > " + device + " device.");
 		verificationSc1 = indexPageSc1.selectDevice(device);
 

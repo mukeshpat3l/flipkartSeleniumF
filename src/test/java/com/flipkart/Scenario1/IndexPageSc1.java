@@ -48,6 +48,7 @@ public class IndexPageSc1 extends AbstractPage {
 	public VerificationSc1 closePopup() {
 		Common.clickableElement(closePop, driver);
 		Common.clickOn(driver, closePop);
+		log("Clicked on the colse icon of popup.");
 		return new VerificationSc1(driver);
 	}
 

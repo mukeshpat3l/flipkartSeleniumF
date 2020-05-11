@@ -10,26 +10,16 @@ import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class TestData {
-
-	public static String uploadFilePath(String filename) {
-		String dataFilePath = "Data/" + filename + "";
-		File datafile = new File(dataFilePath);
-		String fullpath = datafile.getAbsolutePath();
-		return fullpath;
-	}
 
 	public static XSSFSheet ExcelWSheet;
 	public static XSSFWorkbook ExcelWBook;
@@ -132,7 +122,7 @@ public class TestData {
 		}
 	}
 // Get total number of row from excel sheet
-	public static int getTotalRow(String Datafile,String sheet) {
+/*	public static int getTotalRow(String Datafile,String sheet) {
 		int totalRows = 0;
 		try {
 			File datafile = new File(Datafile);
@@ -143,7 +133,7 @@ public class TestData {
 		} catch (Exception e) {
 		}
 		return totalRows;
-	}
+	}*/
 
 	public static boolean verifyCellValue(String datafile,String sheet, String value,int i , int j)
 	{
@@ -190,7 +180,7 @@ public class TestData {
 		return ser;
 	}
 
-	public static boolean verifyRowWiseColumnValue(String Datafile,String sheet,String value,int ColumnNumber) throws Exception {
+/*	public static boolean verifyRowWiseColumnValue(String Datafile,String sheet,String value,int ColumnNumber) throws Exception {
 		boolean ServiceFlag = false;
 		String[][] tabArray = null;
 		try {
@@ -267,7 +257,7 @@ public class TestData {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 	
 	public static String getValueFromConfig(String Datafile, String value) throws IOException {
 		String result="";
@@ -461,4 +451,44 @@ public class TestData {
 	  }
 	  return col;
 	 }
+	
+	/* Get Excel Sheet
+	 * 
+	 */
+	
+	public static Sheet getExcelSheet(int sheetIndex) {
+		String dataFilePath = "Resource/DataConfigurations.xlsx";
+		File datafile = new File(dataFilePath);
+		String fullpath = datafile.getAbsolutePath();
+		Sheet firstSheet = null;
+
+		try {
+			FileInputStream inputStream = new FileInputStream(new File(fullpath));
+
+			Workbook workbook = new XSSFWorkbook(inputStream);
+			firstSheet = workbook.getSheetAt(sheetIndex);
+
+			workbook.close();
+			inputStream.close();
+
+		} catch (Exception e) {
+
+		}
+		return firstSheet;
+	}
+
+	
+	/* Get URL from Excel Sheet
+	 * 
+	 */
+	
+	public static String getMobileDetails(int row, int column) {
+
+		DataFormatter formatter = new DataFormatter();
+		Cell cell = getExcelSheet(0).getRow(row).getCell(column);
+		String mobileDetails = formatter.formatCellValue(cell);
+
+		return mobileDetails;
+	}
+
 }

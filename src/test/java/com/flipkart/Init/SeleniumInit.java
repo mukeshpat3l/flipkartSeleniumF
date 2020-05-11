@@ -126,7 +126,6 @@ public class SeleniumInit{
 			System.setProperty("webdriver.gecko.drive",path1);
 			
 			FirefoxProfile profile = new FirefoxProfile();
-			//path = "C:\\Users\\KQSPL_R\\Downloads";
 			profile.setPreference("dom.max_chrome_script_run_time", "999");
 			profile.setPreference("dom.max_script_run_time", "999");
 			profile.setPreference("browser.download.folderList", 2);
